@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+
+    width: 100%;
+    height: 100%;
+}
+
+ul {
+    padding: 0px !important;
+}
+
+main {
+    margin: 0 auto;
+    width: 980px;
+    position: relative;
+}
+
+.menu-principal {
+    width: 100%;
+    background-color: #242323;
+    height: 60px;
+}
+
+.logo {
+    float: left;
+    padding: 16px;
+    width: 70%;
+}
+
+.redes-sociais ul li {
+    margin-left: 25px;
+    display: flex;
+    float: left;
+}
+
+.redes-sociais {
+    width: 25%;
+    float: right;
+}
+
+/* ACIMA TEM A PRIMEIRA PARTE LOGO */
+
+.header-2 {
+    background-color: #ffffff;
+    width: 980px;
+    margin: 0 auto;
+    padding: 15px;
+
+}
+
+.menu-urls {
+    height: 80px;
+    border-bottom: 3px solid #efefef;
+}
+
+.menu ul li {
+    display: inline-block;
+    color: #8b8b8b;
+    margin-left: 15px;
+    height: 50px;
+}
+
+.menu ul li:hover {
+    border-bottom: 3px solid #00bac6;
+}
+
+.menu ul li a:hover {
+    color: #00bac6;
+
+}
+
+.menu ul li a {
+    color: #8b8b8b;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+
+}
+
+.menu {
+    width: 70%;
+    float: left;
+}
+
+.busca {
+    width: 30%;
+    float: right;
+    text-align: center;
+
+}
+
+.busca input {
+    height: 36px;
+    width: 190px;
+    margin-top: 10px;
+    padding: 0 7px;
+    background-image: url('../img/icone-search.png');
+    background-repeat: no-repeat;
+    background-position: 93%;
+    border: 2px solid #d6d6d6;
+
+}
+
+.col-100 {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+/* ACIMA O MENU COM O CAMPO BUSCA */
+
+button.slick-prev {
+    cursor: pointer;
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 9;
+    background-image: url('../img/anterior.png');
+    top: 35%;
+    left: 20%;
+}
+
+button.slick-next {
+    cursor: pointer;
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 9;
+    background-image: url('../img/proximo.png');
+    top: 35%;
+    right: 20%;
+}
+
+.slick-slide {
+    padding: 10px;
+}
+/* ALINHA OS DOTS NO CENTRO DA TELA */
+.slick-dots{ 
+    margin: 0 auto;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 600px;
+}
+
+/* ESTILIZA O BUTTON  Q É O DOT*/
+.slick-dots li button{
+    font-size: 0;
+    border: 5px solid #ffffff;
+    width: 26px;
+    height: 26px;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+
+.slick-dots li{
+    padding-left: 10px;
+    display: inline-block;
+   
+}
+
+li.slick-active button{
+    background-color: #00bac6;
+ 
+}

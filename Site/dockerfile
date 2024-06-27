@@ -1,0 +1,21 @@
+FROM nginx:alpine
+
+WORKDIR /app
+
+# Remove o arquivo padrão do nginx
+RUN rm -rf /usr/share/nginx/html/*
+
+# Copie os arquivos HTML e CSS para o diretório de trabalho do nginx
+COPY index.html /usr/share/nginx/html/
+COPY css/main.css /usr/share/nginx/html/css/
+COPY img /usr/share/nginx/html/img
+
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
+
+# COMO SUBIR O PROJETO PARA O DOCKERHUB
+
+# $ docker tag projetofinal2_web:latest <seu_usuario_dockerhub>/<seu_repo_dockerhub>:v1.0 PREPARA O ARQUIVO
+# $ docker push <seu_usuario-dockerhub>/<seu_repo_dockerhub:v0.1 SOBE O ARQUIVO
