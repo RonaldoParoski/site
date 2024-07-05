@@ -19,3 +19,4 @@ CMD ["nginx", "-g", "daemon off;"]
 
 # $ docker tag projetofinal2_web:latest <seu_usuario_dockerhub>/<seu_repo_dockerhub>:v1.0 PREPARA O ARQUIVO
 # $ docker push <seu_usuario-dockerhub>/<seu_repo_dockerhub:v0.1 SOBE O ARQUIVO
+# docker run -d -p 80:80 site:tag 

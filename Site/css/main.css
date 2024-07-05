@@ -15,7 +15,8 @@ ul {
     padding: 0px !important;
 }
 
-main {
+main,
+.content {
     margin: 0 auto;
     width: 980px;
     position: relative;
@@ -115,6 +116,10 @@ main {
 
 /* ACIMA O MENU COM O CAMPO BUSCA */
 
+.slider {
+    width: 100%;
+}
+
 button.slick-prev {
     cursor: pointer;
     font-size: 0px;
@@ -145,9 +150,11 @@ button.slick-next {
 
 .slick-slide {
     padding: 10px;
+
 }
+
 /* ALINHA OS DOTS NO CENTRO DA TELA */
-.slick-dots{ 
+.slick-dots {
     margin: 0 auto;
     width: 50%;
     position: absolute;
@@ -156,7 +163,7 @@ button.slick-next {
 }
 
 /* ESTILIZA O BUTTON  Q É O DOT*/
-.slick-dots li button{
+.slick-dots li button {
     font-size: 0;
     border: 5px solid #ffffff;
     width: 26px;
@@ -164,16 +171,199 @@ button.slick-next {
     background: transparent;
     border-radius: 50%;
     cursor: pointer;
-    
+
 }
 
-.slick-dots li{
+.slick-dots li {
     padding-left: 10px;
     display: inline-block;
-   
+
 }
 
-li.slick-active button{
+li.slick-active button {
     background-color: #00bac6;
- 
+
 }
+
+/* ACIMA O SLIDER */
+.texto-destaque {
+    text-align: center;
+}
+
+.texto-destaque strong {
+    color: #646464;
+}
+
+.texto-destaque h1 {
+    font-size: 30px;
+    color: #818181;
+    text-transform: uppercase;
+}
+
+.texto-destaque p {
+    font-size: 15px;
+    color: #9a9a9a
+}
+
+/* ACIMA UM TEXO */
+.teste {
+    display: flex;
+    margin: 60px 0 0 10px;
+
+}
+
+
+.topo {
+    margin-top: 50px;
+}
+
+/* ACIMA MEIO DA PAGINA */
+.carro {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+
+
+}
+
+.fotos {
+    padding: 15px;
+    border: 1px solid #00bac6;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+img {
+    max-height: 180px;
+    /* Define a altura máxima para 150px */
+    width: auto;
+    /* Mantém a largura proporcional à altura */
+    opacity: 0.8;
+    transition: 0.4s;
+
+}
+
+
+img:hover {
+  
+    opacity: 1.0;
+    transform: scale(1.1);
+}
+
+.container-foto {
+    background: #eeeeee;
+}
+
+.seta {
+    text-align: center;
+    margin-bottom: -8px;
+}
+
+/* ACIMA AS 6 FOTOS */
+
+.content-logo {
+    display: flex;
+    /* Ativa layout flexbox */
+    flex-wrap: wrap;
+    /* Permite quebrar as imagens em linhas */
+    justify-content: center;
+    /* Alinha o conteúdo no centro horizontalmente */
+    align-items: center;
+}
+
+.iamgem {
+    margin-right: 80px;
+}
+
+/* ACIMA LOGOS */
+.about {
+    display: flex;
+    justify-content: center;
+    background-color: #685353;
+}
+
+.about-texto {
+    width: 250px;
+    margin-top: 20px;
+    margin-left: 30px;
+
+}
+
+.about-data::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-image: url('../img/clock.png');
+    padding-right: 6px;
+    background-repeat: no-repeat;
+   
+
+}
+.cor-data {
+    color: #947373;
+}
+
+.about-h3 {
+    color: #efefef;
+    text-align: justify;
+}
+
+.about-local::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url('../img/emailico.png');
+    padding-right: 2px;
+    background-repeat: no-repeat;
+}
+
+.about-numero::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url('../img/telefoneico.png');
+    padding-right: 6px;
+    background-repeat: no-repeat;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  height: 200px;
+  background-color: rgb(78, 69, 69);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  top: 100px;
+  right: 20px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.tooltip .tooltiptext {
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    opacity: 1;
+  }
